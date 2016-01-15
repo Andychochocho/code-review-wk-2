@@ -13,15 +13,15 @@
   <body>
     <div class="container">
       <div class="page-header">
-        <h1>Your Vacation Calculator</h1>
+          <h1><strong>Your Vacation Calculator<strong></h1>
       </div>
       <div class="row">
-        <div class="col-md-6 quiz">
+        <div class="col-md-6">
           <div id="blanks">
             <form id="questions">
 
               <div class="form-group">
-                <label for="gender">What is your gender?</label>
+                <label for="gender">What gender do you indentify as?</label>
                 <div class="radio">
                   <label>
                     <input type="radio" name="gender" id="female" value="female">
@@ -50,13 +50,20 @@
                     Cold
                   </label>
                 </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="weather" id="both" value="both">
+                    Both
+                  </label>
+                </div>
               </div>
+
 
               <div class="form-group">
                 <label for="children">Do you have children?</label>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="children" id="children" value="yes">
+                    <input type="radio" name="children" id="yesChildren" value="yes">
                     I do have children
                   </label>
                 </div>
@@ -72,7 +79,7 @@
                 <label for="married">Are you married?</label>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="married" id="married" value="yes">
+                    <input type="radio" name="married" id="yesMarried" value="yes">
                     I am married
                   </label>
                 </div>
@@ -99,27 +106,28 @@
                   </label>
                 </div>
               </div>
-
-              <button type="submit" class="btn">Calculate my dream vacation!</button>
+            <button type="submit" class="btn-success">Calculate my dream vacation!</button>
             </form>
           </div>
         </div>
 
-        <div class="col-md-6">
-            <div id="las-vegas" class="pic">
-              <h3></h3>
-              <img src="img/las-vegas.jpg" alt="picture of las vegas">
-            </div>
+        <div id="vacation-results">
+          <div class="col-md-6">
+              <div id="las-vegas" class="pic">
+                <h4>You seem to have very few responsibilities in life, enjoy the warmer weather, and care for a more wild and crazy night more than anything else. Las Vegas is your perfect destination!</h4>
+                <img src="img/las-vegas.jpg" alt="picture of las vegas">
+              </div>
 
-            <div id="alaska" class="pic">
-              <h3></h3>
-              <img src="img/alaska.jpg" alt="picture of alaska">
-            </div>
+              <div id="alaska" class="pic">
+                <h4>You seem to have settled down in life, enjoy the colder weather, and care more for time you spend with your family and loved ones. Alaska is your perfect destination!</h4>
+                <img src="img/alaska.jpg" alt="picture of alaska">
+              </div>
 
-            <div id="japan" class="pic">
-              <h3></h3>
-              <img src="img/japan.jpg" alt="picture of japan">
-            </div>
+              <div id="japan" class="pic">
+                <h4>You seem to have a very balanced life, have a capacity to enjoy both the warmer and colder weather, and enjoy the little things in life. Japan is your perfect destination!</h4>
+                <img src="img/japan.jpg" alt="picture of japan">
+              </div>
+          </div>
         </div>
 
       </div>

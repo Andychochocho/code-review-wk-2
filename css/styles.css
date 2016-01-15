@@ -1,3 +1,15 @@
-.pic {
-  display: hidden;
+#las-vegas, #alaska, #japan {
+  display: none;
+}
+
+#vacation-results img {
+    width: 550px;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: teal;
 }

@@ -10,7 +10,6 @@ that would be suited towards their needs.
 
 Bugs: [Enter steps to reproduce below:]
 
--Can't seem to find out why my JS file won't seem to interact with my page when I click the submit button.
-
-Copyright MIT license.
+Copyright Andrew Cho
+ MIT license.
 

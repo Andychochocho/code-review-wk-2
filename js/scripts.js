@@ -1,19 +1,21 @@
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
-    var weather = $('select(name=weather):checked').val();
-    var gender = $('select(name=gender):checked').val();
-    var children = $('select(name=children):checked').val();
-    var married = $('select (name=married):checked').val();
-    var animal = $('select(name=animal):checked').val();
 
-    if (weather === 'hot') {
+    var weatherHot = $('#hot:checked').val();
+    var weatherCold = $('#cold:checked').val();
+    var weatherBoth = $('#both:checked').val();
+
+    if (weatherHot === 'hot') {
       $('#las-vegas').show();
     }
-    else if (weather === 'cold') {
+    else if (weatherCold === 'cold') {
       $('#alaska').show();
     }
-    else if (weather === 'both')
+    else if (weatherBoth === 'both')
       $('#japan').show();
+      else {
+        prompt('Please put in all your information, press OK to continue.');
+      }
     event.preventDefault();
   })
 });

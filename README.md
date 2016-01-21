@@ -1,5 +1,7 @@
 Name: Andrew Cho
 
+Date: Jan 20 2016
+
 Program Name: Intro to Programming
 
 Description: I used the Bootstrap framework to help style my HTML page 
